@@ -1,0 +1,22 @@
+#include "Player.h"
+#include <iostream>
+using namespace std;
+
+Player::Player(string nickname)
+    : nickname(nickname), level(1), HP(100), MP(50),
+    power(10), defence(5), accuracy(7), speed(6) {
+}
+
+void Player::printPlayerStatus() {
+    cout << "------------------------------------" << endl;
+    cout << "* 현재 능력치" << endl;
+    cout << "닉네임: " << nickname << endl;
+    cout << "Lv. " << level << endl;
+    cout << "HP: " << HP << endl;
+    cout << "MP: " << MP << endl;
+    cout << "공격력: " << power << endl;
+    cout << "방어력: " << defence << endl;
+    cout << "정확도: " << accuracy << endl;
+    cout << "속도: " << speed << endl;
+    cout << "------------------------------------" << endl;
+}
